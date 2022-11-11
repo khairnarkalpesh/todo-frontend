@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  box-shadow: 0 4px 16px #aaa;
+  width: 500px;
+  margin: 30px auto;
+  padding: 15px 0px;
+}
+
+h1 {
+  margin: 20px;
+  background: #fff;
+  line-height: 1;
+}
+
+.top {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  counter-reset: done-items pending-items;
+  padding: 0 15px;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 400px;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.add {
+  background-color: #2f8176;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.item,
+.item-completed {
+  margin-top: 1rem;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  border-radius: 5px;
+  order: 4;
+  animation: pending 0.6s;
+  position: relative;
+  padding: 10px 0 10px 10px;
+  border-top: dashed 1px #fff;
+  cursor: pointer;
+  counter-increment: pending-items;
+  background-color: #9fffda;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.item-completed {
+  background-color: #e8a87c;
+}
+
+.item:hover {
+  background-color: #e8a87c;
+  transition: 1s;
+}
+
+.item-completed:hover {
+  background-color: #9fffda;
+  transition: 1s;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+i {
+  cursor: pointer;
+}
+
+.heading {
+  border-left: 5px solid #41b3a3;
+  padding-left: 10px;
+  margin-top: 1rem;
+}
+
+.checkbox {
+  width: 30px;
+}

@@ -1,0 +1,17 @@
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 2vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.userName {
+  position: fixed;
+  right: 8rem;
+  top: 3rem;
+}
